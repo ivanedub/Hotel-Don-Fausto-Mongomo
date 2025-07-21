@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hotel Don Fausto Mongomo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Playfair Display", serif;
+    }
+  </style>
+</head>
+<body class="bg-[#F5F3EA] text-[#333333]">
+  <!-- NAVBAR -->
+  <header
+    class="fixed top-0 w-full backdrop-blur-md bg-[#154734]/90 shadow-lg z-50"
+  >
+    <div
+      class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
+    >
+      <h1
+        class="text-3xl font-bold text-[#C59D5F] tracking-wide drop-shadow-lg"
+      >
+        Hotel Don Fausto Mongomo
+      </h1>
+      <nav>
+        <div class="md:hidden">
+          <!-- Botón menú hamburguesa -->
+          <button
+            id="menu-btn"
+            class="text-white focus:outline-none"
+            aria-label="Abrir menú"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul
+          id="menu"
+          class="hidden md:flex md:space-x-6 text-white font-medium"
+        >
+          <li><a href="index.html" class="hover:text-[#C59D5F] transition-colors">Inicio</a></li>
+          <li><a href="habitaciones.html" class="hover:text-[#C59D5F] transition-colors">Habitaciones</a></li>
+          <li><a href="contacto.html" class="hover:text-[#C59D5F] transition-colors">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section
+    class="relative bg-[url('assets/habitacion1.jpg')] bg-cover bg-center h-[500px] md:h-[550px] flex items-center justify-center mt-20 px-4"
+  >
+    <div
+      class="bg-black/60 p-6 md:p-10 rounded-3xl shadow-2xl text-center max-w-xl mx-auto"
+    >
+      <h2
+        class="text-3xl md:text-5xl font-bold text-[#C59D5F] mb-4 drop-shadow-xl"
+      >
+        Bienvenido a Don Fausto Mongomo
+      </h2>
+      <p class="text-lg md:text-xl text-white mb-6">
+        Lujo, confort y una experiencia única
+      </p>
+      <a
+        href="https://wa.me/34123456789?text=Hola,%20quiero%20reservar%20una%20habitación%20en%20Don%20Fausto%20Mongomo"
+        target="_blank"
+        class="inline-block bg-gradient-to-r from-[#C59D5F] to-[#d6b778] text-[#154734] px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+        >Reservar por WhatsApp</a
+      >
+    </div>
+  </section>
+
+  <!-- SECCIÓN HABITACIONES -->
+  <section class="max-w-7xl mx-auto px-4 py-12 md:py-16">
+    <h3
+      class="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-[#154734]"
+    >
+      Nuestras Habitaciones
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-10">
+      <!-- Card -->
+      <div
+        class="bg-white/70 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow"
+      >
+        <img
+          src="assets/habitacion1.jpg"
+          alt="Habitación estándar"
+          class="w-full h-52 sm:h-56 object-cover"
+        />
+        <div class="p-5 md:p-6">
+          <h4 class="text-xl md:text-2xl font-semibold mb-3 text-[#C59D5F]">
+            Habitación Estándar
+          </h4>
+          <p class="text-gray-700 mb-4">
+            Confortable y equipada para tu descanso.
+          </p>
+          <p class="text-[#154734] font-bold text-lg md:text-xl">Desde
+            25.000 Fcfa/noche
+          </p>
+        </div>
+      </div>
+      <!-- Card -->
+      <div
+        class="bg-white/70 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow"
+      >
+        <img
+          src="assets/habitacion2.jpg"
+          alt="Habitación deluxe"
+          class="w-full h-52 sm:h-56 object-cover"
+        />
+        <div class="p-5 md:p-6">
+          <h4 class="text-xl md:text-2xl font-semibold mb-3 text-[#C59D5F]">
+            Habitación Deluxe
+          </h4>
+          <p class="text-gray-700 mb-4">
+            Espaciosa, elegante y con balcón privado.
+          </p>
+          <p class="text-[#154734] font-bold text-lg md:text-xl">Desde
+            50.000 Fcfa/noche
+          </p>
+        </div>
+      </div>
+      <!-- Card -->
+      <div
+        class="bg-white/70 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow"
+      >
+        <img
+          src="assets/habitacion3.jpg"
+          alt="Suite familiar"
+          class="w-full h-52 sm:h-56 object-cover"
+        />
+        <div class="p-5 md:p-6">
+          <h4 class="text-xl md:text-2xl font-semibold mb-3 text-[#C59D5F]">
+            Suite Familiar
+          </h4>
+          <p class="text-gray-700 mb-4">
+            Ideal para familias, con salón y cocina.
+          </p>
+          <p class="text-[#154734] font-bold text-lg md:text-xl">Desde
+            70.000 Fcfa/noche
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer
+    class="bg-[#154734] text-white mt-12 relative overflow-hidden"
+  >
+    <div
+      class="absolute inset-0 bg-[url('assets/patron-elegante.png')] bg-cover opacity-10"
+    ></div>
+    <div
+      class="max-w-7xl mx-auto px-4 py-8 text-center relative z-10"
+    >
+      <p class="text-lg">&copy; 2025 Hotel Don Fausto Mongomo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
